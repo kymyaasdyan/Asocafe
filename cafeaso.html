@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    # <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>کافینت آسو</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>کافینت آسو</h1>
+        <p>ارائه دهنده کلیه خدمات کامپیوتر و دانشجویی</p>
+    </header>
+    <div class="container">
+        <table>
+            <tr>
+                <th>خدمات</th>
+                <th>توضیحات</th>
+            </tr>
+            <tr>
+                <td>ثبت نام کنکور</td>
+                <td>
+                    <button onclick="showOptions('konkor', ['سراسری', 'ارشد', 'دکتری'])">نمایش</button>
+                    <div id="konkor"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>تحقیق</td>
+                <td>
+                    <button onclick="showOptions('research', ['دانش آموزی', 'دانشجویی', 'حرفه ای'])">نمایش</button>
+                    <div id="research"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>پروپوزال</td>
+                <td>
+                    <button onclick="showOptions('proposal', ['ارشد', 'کارشناسی', 'دکتری'])">نمایش</button>
+                    <div id="proposal"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>خلاصه نویسی</td>
+                <td>
+                    <button onclick="showOptions('summary', ['متن فارسی', 'متن انگلیسی', 'متن عربی'])">نمایش</button>
+                    <div id="summary"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+       
+        <div class="contact">
+            <h3>راه های ارتباطی</h3>
+            <p>ایتا، تلگرام و روبیکا</p>
+        </div>
+    </footer>
+    
+    <script>
+        function showOptions(id, options) {
+            document.getElementById(id).innerText = options.join(', ');
+        }
+    </script>
+
+ 
+</body>
+</html>
